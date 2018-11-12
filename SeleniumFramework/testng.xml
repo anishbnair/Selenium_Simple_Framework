@@ -4,7 +4,6 @@
   <test thread-count="5" name="Test">
   	<classes>
   		<class name = "com.edureka.testScripts.LoginScript"></class>
-  		<class name = "com.edureka.testScripts.BlogSearch"></class>
   	</classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
