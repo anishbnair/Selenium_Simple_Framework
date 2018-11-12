@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class LoginScript {
@@ -11,7 +12,7 @@ public class LoginScript {
 	public WebDriver driver = null;
 	
 	@BeforeMethod
-	public void OpenBrowser() {
+	public void openBrowser() {
 		
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -20,6 +21,11 @@ public class LoginScript {
 		
 		driver.get("https://www.edureka.co/");
 		
+	}
+	
+	@AfterMethod
+	public void closeBrowser() {
+		driver.close();		
 	}
 
 }
