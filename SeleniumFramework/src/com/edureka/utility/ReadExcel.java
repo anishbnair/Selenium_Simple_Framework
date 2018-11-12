@@ -16,9 +16,9 @@ public class ReadExcel {
 		
 		File file = new File(filename);
 		FileInputStream fin = new FileInputStream(file);
-		Workbook wb = new XSSFWorkbook();
+		Workbook wb = new XSSFWorkbook(fin);
 		Sheet sh = wb.getSheet(sheetname);
-		int rowNum = sh.getLastRowNum();
+		int rowNum = sh.getLastRowNum() +1;
 		int colNum = sh.getRow(0).getLastCellNum();
 		
 		String[][] data = new String[rowNum][colNum];
