@@ -26,6 +26,7 @@ public class LoginScript {
 		driver.get("https://www.edureka.co/");		
 	}
 	
+	// /* ... Ensure to update correct email and password in the TestExcel.xlsx spreadsheet before run the scripts ... */
 	@Test
 	public void login() {
 		try {
