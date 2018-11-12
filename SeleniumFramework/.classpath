@@ -3,5 +3,15 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="Jars/selenium-server-standalone-3.14.0.jar"/>
+	<classpathentry kind="lib" path="Jars/POI/commons-codec-1.11.jar"/>
+	<classpathentry kind="lib" path="Jars/POI/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="Jars/POI/curvesapi-1.05.jar"/>
+	<classpathentry kind="lib" path="Jars/POI/poi-4.0.0.jar"/>
+	<classpathentry kind="lib" path="Jars/POI/poi-examples-4.0.0.jar"/>
+	<classpathentry kind="lib" path="Jars/POI/poi-excelant-4.0.0.jar"/>
+	<classpathentry kind="lib" path="Jars/POI/poi-ooxml-4.0.0.jar"/>
+	<classpathentry kind="lib" path="Jars/POI/poi-ooxml-schemas-4.0.0.jar"/>
+	<classpathentry kind="lib" path="Jars/POI/poi-scratchpad-4.0.0.jar"/>
+	<classpathentry kind="lib" path="Jars/POI/xmlbeans-3.0.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
