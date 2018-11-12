@@ -47,11 +47,18 @@ public class LoginScript {
 			
 			e.printStackTrace();	
 			
-		}
+		}		
+	}
+	
+	@Test 
+	public void blogSearch() {
 		
-//		String expectedResult = "";
-//		String actualResult = 
-		
+		// Click on Blog
+		driver.findElement(By.xpath("(//a[text()=\"Blog\"])[3]")).click();
+		// Click on Interview questions
+		driver.findElement(By.xpath("//a[text()=\"Interview Questions\"]")).click();
+		// Click on Top Selenium Interview Questions...
+		driver.findElement(By.xpath("//a[text()=\"Top Selenium Interview Questions And Answers You Must Prepare In 2018\"]")).click();		
 	}
 	
 	@AfterMethod
