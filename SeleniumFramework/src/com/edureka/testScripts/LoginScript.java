@@ -20,7 +20,7 @@ public class LoginScript {
 		
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		
 		driver.get("https://www.edureka.co/");
@@ -30,7 +30,7 @@ public class LoginScript {
 	@Test
 	public void login() {
 		try {
-			String[][] data = ReadExcel.getData("TestExcel.xlsx", "sheet1");
+			String[][] data = ReadExcel.getData("TestExcel.xlsx", "Sheet1");
 			
 			for (int i = 0; i < data.length; i++) {
 				String username = data[i][0];
@@ -41,17 +41,22 @@ public class LoginScript {
 				driver.findElement(By.xpath("//input[@id=\"si_popup_email\"]")).sendKeys(username);
 				driver.findElement(By.xpath("//input[@id=\"si_popup_passwd\"]")).sendKeys(password);
 				driver.findElement(By.xpath("//button[@class=\"clik_btn_log btn-block pagesense_en_track\"]")).click();
+								
 			}
-		} catch (Exception e) {
+		} catch (Exception e) {		
 			
-			e.printStackTrace();
+			e.printStackTrace();	
 			
 		}
+		
+//		String expectedResult = "";
+//		String actualResult = 
+		
 	}
 	
 	@AfterMethod
 	public void closeBrowser() {
-		driver.close();		
+//		driver.close();		
 	}
 
 }
