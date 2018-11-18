@@ -32,6 +32,5 @@ public class ReadExcel {
 			}
 		}	
 		return data;
-	}
-	
+	}	
 }
